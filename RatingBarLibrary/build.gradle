@@ -49,7 +49,7 @@ def getVersionName = { ->
 }
 
 def getArtificatId = { ->
-    return "RatingBarType" // Replace with library name ID
+    return "ratingbartype" // Replace with library name ID
 }
 
 publishing {
@@ -58,17 +58,17 @@ publishing {
             groupId 'com.github.ratingbarlibrary'
             artifactId getArtificatId()
             version getVersionName()
-            artifact("$buildDir/outputs/aar/${getArtificatId()}-release.aar")
+            artifact("$buildDir/outputs/aar/RatingBarLibrary-release.aar")
         }
     }
 
     repositories {
         maven {
-            name = "GitHubPackages"
+            name = "GithubPackages"
             /** Configure path of your package repository on Github
              *  Replace GITHUB_USERID with your/organisation Github userID and REPOSITORY with the repository name on GitHub
              */
-            url = uri("https://github.com/vishnukumar7/TypeRatingBarLibrary")
+            url = uri("https://maven.pkg.github.com/vishnukumar7/TypeRatingBarLibrary")
 
             credentials {
                 /**Create github.properties in root project folder file with gpr.usr=GITHUB_USER_ID  & gpr.key=PERSONAL_ACCESS_TOKEN**/
