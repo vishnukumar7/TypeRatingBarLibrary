@@ -2,8 +2,8 @@ pluginManagement {
     repositories {
         google()
         mavenCentral()
+        mavenLocal()
         gradlePluginPortal()
-        maven { url 'https://jitpack.io' }
     }
 }
 dependencyResolutionManagement {
@@ -11,14 +11,8 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        maven { url 'https://jitpack.io' }
-        /*maven{
-            url = uri("https://maven.pkg.github.com/vishnukumar7/TypeRatingBarLibrary")
-            credentials {
-                username = System.getenv("USERNAME")
-                password = System.getenv("TOKEN")
-            }
-        }*/
+        mavenLocal()
+        maven { url "https://jitpack.io" }
     }
 }
 
