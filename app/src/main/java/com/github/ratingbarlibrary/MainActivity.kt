@@ -1,4 +1,4 @@
-package com.app.samplerating
+package com.github.ratingbarlibrary
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
