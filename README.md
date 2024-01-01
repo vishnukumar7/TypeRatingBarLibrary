@@ -10,7 +10,7 @@ dependencyResolutionManagement {
 
 ```gradle
 dependencies {
-	        implementation 'com.github.vishnukumar7:TypeRatingBarLibrary:1.0.0'
+	        implementation 'com.github.vishnukumar7:TypeRatingBarLibrary:1.0.1'
 	}
 ```
  
